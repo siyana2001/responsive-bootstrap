@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --white-color: #f3dddd;
+    --bg-color: #050505;
+    --gray-color: #2e2e2c;
+  }
+  
+  body {
+    background:rgba(26, 233, 205, 0.432) !important;
+  }
+  
+  
+  .nav-item .nav-link {
+    color: white;
+  }
+  
+
+  .hero {
+    height: 200vh;
+    background-image: url("https://e0.pxfuel.com/wallpapers/511/1015/desktop-wallpaper-hijab-vector-niqab-ahmadfu22-islamic-girl-hijab-cartoon-muslim-cute-niqab.jpg");
+    background-repeat: no-repeat;
+    background-position: 60% 0%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+ 
+  
+  
+  #skills i {
+    height: 100px;
+    width: 100px;
+  }
+  #skillsed{
+    padding-top: 5%;
+
+  }
+  #skillsed .container{
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+label{
+    font-size: 20px;
+}
+.progress{
+    height: 30px !important;
+    box-shadow: 2px 4px 5px gray,2px -2px 5px white;
+    
+}
+.progress:hover{
+    box-shadow: 2px 4px 5px white, -2px -2px 5px;
+}
+
+  
+  #portfolio img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: width 2s, height 2s;
+  }
+  
+  #portfolio img:hover{
+  width: 300px;
+  height: 300px;
+}
+  
+  #about .img,
+  #about img,
+  .hire-text h2 {
+    position: relative;
+  }
+  
+ 
+  #about .img::before {
+    left: 50%;
+    width: 4px;
+    position: absolute;
+    height: calc(100% + 140px);
+    background:black
+  }
+  
+  #about img,
+  #about .hire-text h2 {
+    width: 140px;
+  }
+  
+  #about .hire-text h2 {
+    height: 140px;
+  }
+  
+  .social-icons a {
+    width: 40px;
+    height: 40px;
+  }
+  
+  footer .social-icons a {
+    width: 30px;
+    height: 30px;
+  }
+  
+  #cv img {
+    width: 230px;
+  }
+  
+
+  #contact {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("https://e0.pxfuel.com/wallpapers/511/1015/desktop-wallpaper-hijab-vector-niqab-ahmadfu22-islamic-girl-hijab-cartoon-muslim-cute-niqab.jpg");
+    color: black;
+  }
+  
+  @media screen and (max-width: 990px) {
+    #skills .card {
+      width: calc(100% / 2 - 10px) !important;
+    }
+  }
+  
+  @media screen and (max-width: 668px) {
+    #skills .card,
+    #portfolio .card-wrapper {
+      width: 100% !important;
+    }
+   #about .hire-text h2 {
+     height: 70px;
+     width: 70px;
+   }
+  }
